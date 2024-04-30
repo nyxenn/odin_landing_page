@@ -1,4 +1,4 @@
-The Odin Project - Landing Page Project
+# The Odin Project - Landing Page Project
 
 Project 2 of [The Odin Project](https://www.theodinproject.com).
 
