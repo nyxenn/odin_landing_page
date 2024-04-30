@@ -1,0 +1,251 @@
+:root {
+    --background: #1f2937;
+    --color: #f9faf8;
+    --color-muted: #e5e7eb;
+    --color-accent: #3882f6;
+    --color-dark: #1f2937;
+    --color-goober: hsl(50, 50%, 50%);
+
+    --fsz-s: 0.9rem;
+    --fsz: 1.1rem;
+    --fsz-l: 1.5rem;
+    --fsz-xl: 2rem;
+    --fsz-xxl: 4rem;
+}
+
+html {
+    font: inherit;
+    font-size: 100%;
+}
+
+body {
+    color: var(--color);
+    font-size: var(--fsz);
+    font-family: Roboto;
+
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+
+    filter: brightness(120%);
+}
+
+.hero-section button,
+.call-to-goob button {
+    color: var(--color);
+    background-color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    background-color: var(--background);
+}
+
+.logo {
+    font-size: var(--fsz-xl);
+    font-weight: bold;
+}
+
+.logo img {
+    height: var(--fsz-xl);
+    filter: invert();
+}
+
+.links,
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-muted);
+}
+
+.links a {
+    color: var(--color-muted);
+    font-size: var(--fsz);
+}
+
+.links a:hover,
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: auto;
+}
+
+.section {
+    display: flex;
+    padding: 5rem;
+
+    @media screen and (min-width: 1000px) {
+        padding: 7rem 20%;
+    }
+}
+
+.hero-section {
+    background-color: var(--background);
+    gap: 5%;
+}
+
+.hero-header {
+    font-size: var(--fsz-xxl);
+    font-weight: bolder;
+
+    flex: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-header span {
+    color: var(--color-goober);
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text p {
+    color: var(--color-muted);
+}
+
+.hero-img {
+    flex: 1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.hero-img img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.goober-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goober-info-header {
+    font-size: var(--fsz-xl);
+    color: var(--color-dark);
+    font-weight: bolder;
+    padding-bottom: 2rem;
+}
+
+.goobers {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    justify-content: space-evenly;
+}
+
+.goober {
+    flex: 1;
+    width: 80%;
+    overflow: hidden;
+
+    color: var(--color-dark);
+    font-size: var(--fsz-s);
+    text-align: center;
+}
+
+.goober img {
+    object-position: 50% 50%;
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+    border-radius: 0.5rem;
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-end;
+    background-color: var(--color-muted);
+    color: var(--color-dark);
+}
+
+.goober-quote-text {
+    font-size: var(--fsz-xl);
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.call-to-goob {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: var(--color-accent);
+    margin: 0 -5vw;
+    padding: 2rem 5vw;
+    border-radius: 0.5rem;
+    box-shadow: rgba(69, 87, 85, 0.2) 0px 8px 24px;
+    gap: 1rem;
+}
+
+.call-to-goob a,
+.footer a {
+    color: var(--color-goober);
+}
+
+.morbin-time {
+    flex: 3;
+}
+
+.goob-time {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+}
+
+.goob-time button {
+    border: 2px solid var(--color);
+    box-shadow: rgba(69, 87, 85, 0.2) 0px 8px 24px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: var(--color);
+    background-color: var(--background);
+}
